@@ -137,7 +137,336 @@
             </li>
             <li class="breadcrumb-item active">Overview</li>
           </ol>
+ <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">บันทึกข้อมูลทุน</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form action="table.php" method="POST">
+                                        <!-- <div class="col-lg-6">
+                                            <label>ภาคการศึกษา</label><br>
+                                            <input type="radio" name="gender" value="male" required> 1
+                                            <input type="radio" name="gender" value="female" required> 2
+                                            <input type="radio" name="gender" value="other" required> 3<br>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <label>ปีการศึกษา</label>
+                                            <input type = "text" class="form-control" name="Capital_amount" size="5" required>
+                                        </div>                               
+                                        <div class="form-group">
+                                            <label>ประเภททุน</label>
+                                            <input type = "text" class="form-control" name="Capital_type" required>
+                                        </div>
+										<div class="form-group">
+                                            <label>ชื่อทุน</label>
+                                            <input type = "text" class="form-control" name="Capital_name" required>
+                                        </div>
+										<div class="form-group">
+                                            <label>คุณสมบัติผู้รับทุน</label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label>GPAX</label>
+                                            <input type = "text" class="form-control" name="Capital_amount" required>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label>คะแนนความประพฤติ</label>
+                                            <input type = "text" class="form-control" name="Capital_amount" required>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label>คะแนนกิจกรรม</label>
+                                            <input type = "text" class="form-control" name="Capital_amount" required>
+                                        </div>
 
+
+                                        <div class="col-md-6">
+                                            <label>สำนักวิชา</label>
+                                            <select class="form-control">
+                                                <option>กรุณาเลือกสำนักวิชา</option>
+                                                <option>การจัดการ</option>
+                                                <option>เทคโนโลยีการเกษตร</option>
+                                                <option>พยาบาลศาสตร์</option>
+                                                <option>แพทยศาสตร์</option>
+                                                <option>เภสัชศาสตร์</option>
+                                                <option>วิทยาศาสตร์</option>
+                                                <option>วิศวกรรมศาสตร์และทรัพยากร</option>
+                                                <option>สถาปัตยกรรมศาสตร์และการออกแบบ</option>
+                                                <option>สหเวชศาสตร์</option>
+                                                <option>สารสนเทศศาสตร์</option>
+                                                <option>ศิลปศาสตร์</option>
+                                                <option>สาธารณสุขศาสตร์</option>
+                                                <option>รัฐศาสตร์และนิติศาสตร์</option>
+                                            </select>
+                                        </div>
+
+										<div class="col-sm-4">
+                                            <label>จำนวนทุน</label>
+                                            <input type = "text" class="form-control" name="Capital_amount" size="5" required>
+                                        </div>
+										<div class="col-sm-5">
+                                            <label>จำนวนเงินทุน</label>
+                                            <input type = "text" class="form-control" name="Amount" required>
+                                        </div>
+                                        <div class="col-lg-6">
+										<input type="submit" value="บันทึก" name="save">
+                                            <input  type="reset" value="ยกเลิก">
+
+                                        </div> -->
+
+                                        <table width="636" border="0">
+
+<tr>
+        <tr>
+        <td colspan="2"><h4><label>ระยะเวลาการให้ทุน</label></h4></td>
+    </tr>
+    <tr>
+      <td width="242"><label>ภาคการศึกษา <font color="red" size="5">*</font></label> 
+        <br>
+                                            <input type="radio" name="semester" value="1" required> 1
+                                            <input type="radio" name="semester" value="2" required> 2
+                                            <input type="radio" name="semester" value="3" required> 3</td>
+      <td width="378"><label>&nbsp;&nbsp;&nbsp;ปีการศึกษา <font color="red" size="5">*</font></label>
+        <script language="JavaScript" type="text/JavaScript">
+function bannedKey1(evt) 
+{
+var allowedEng = false; //อนุญาตให้คีย์อังกฤษ
+var allowedThai = false; //อนุญาตให้คีย์ไทย
+var allowedNum = true; //อนุญาตให้คีย์ตัวเลข
+
+var k = event.keyCode;
+
+/* เช็คตัวเลข 0-9 */
+if (k>=48 && k<=57) { return allowedNum; }
+
+/* เช็คคีย์อังกฤษ a-z, A-Z */
+if ((k>=65 && k<=90) || (k>=97 && k<=122)) { return allowedEng; }
+
+/* เช็คคีย์ไทย ทั้งแบบ non-unicode และ unicode */
+if ((k>=161 && k<=255) || (k>=3585 && k<=3675)) { return allowedThai; }
+}
+//-->
+</script>
+        <br>
+                        <div class="col-lg-6"><input type = "text" class="form-control" name="year"  required></div></td>
+    </tr>
+    <tr>
+        <tr>
+        <td colspan="2"><h4><label>ถึง</label></h4></td>
+    </tr>
+    <tr>
+      <td width="242"><label>ภาคการศึกษา <font color="red" size="5">*</font></label> 
+        <br>
+                                            <input type="radio" name="semester_c" value="1" required> 1
+                                            <input type="radio" name="semester_c" value="2" required> 2
+                                            <input type="radio" name="semester_c" value="3" required> 3</td>
+      <td width="378"><label>&nbsp;&nbsp;&nbsp;ปีการศึกษา <font color="red" size="5">*</font></label>
+        <script language="JavaScript" type="text/JavaScript">
+function bannedKey1(evt) 
+{
+var allowedEng = false; //อนุญาตให้คีย์อังกฤษ
+var allowedThai = false; //อนุญาตให้คีย์ไทย
+var allowedNum = true; //อนุญาตให้คีย์ตัวเลข
+
+var k = event.keyCode;
+
+/* เช็คตัวเลข 0-9 */
+if (k>=48 && k<=57) { return allowedNum; }
+
+/* เช็คคีย์อังกฤษ a-z, A-Z */
+if ((k>=65 && k<=90) || (k>=97 && k<=122)) { return allowedEng; }
+
+/* เช็คคีย์ไทย ทั้งแบบ non-unicode และ unicode */
+if ((k>=161 && k<=255) || (k>=3585 && k<=3675)) { return allowedThai; }
+}
+//-->
+</script>
+        <br>
+                        <div class="col-lg-6"><input type = "text" class="form-control" name="year_c"  required></div></td>
+    </tr>
+    <tr>
+        <tr>
+      <td colspan="2"><label>ประเภททุน<font color="red" size="5">*</font></label>
+                    <select class="form-control" name="Capital_type">
+                                                <option value="กรุณาเลือกประเภททุน">กรุณาเลือกประเภททุน</option>
+                                                <option value="ทุนรายปี" required>ทุนรายปี</option>
+                                                <option value="ทุนต่อเนื่อง" required>ทุนต่อเนื่อง</option>
+                                            </select>
+      
+    </tr>
+    <tr>
+      <td colspan="2"><label>ชื่อทุน <font color="red" size="5">*</font></label>
+                <script language="JavaScript" type="text/JavaScript">
+function bannedKey1(evt) 
+{
+var allowedEng = true; //อนุญาตให้คีย์อังกฤษ
+var allowedThai = true; //อนุญาตให้คีย์ไทย
+var allowedNum = false; //อนุญาตให้คีย์ตัวเลข
+
+var k = event.keyCode;
+
+/* เช็คตัวเลข 0-9 */
+if (k>=48 && k<=57) { return allowedNum; }
+
+/* เช็คคีย์อังกฤษ a-z, A-Z */
+if ((k>=65 && k<=90) || (k>=97 && k<=122)) { return allowedEng; }
+
+/* เช็คคีย์ไทย ทั้งแบบ non-unicode และ unicode */
+if ((k>=161 && k<=255) || (k>=3585 && k<=3675)) { return allowedThai; }
+}
+//-->
+</script>
+                                            <input type = "text" class="form-control" name="Capital_name" required></td>
+      
+    </tr>
+    <tr>
+      <td colspan="2"><label>ชื่อผู้บริจาคทุน <font color="red" size="5">*</font></label>
+                        <script language="JavaScript" type="text/JavaScript">
+function bannedKey1(evt) 
+{
+var allowedEng = true; //อนุญาตให้คีย์อังกฤษ
+var allowedThai = true; //อนุญาตให้คีย์ไทย
+var allowedNum = false; //อนุญาตให้คีย์ตัวเลข
+
+var k = event.keyCode;
+
+/* เช็คตัวเลข 0-9 */
+if (k>=48 && k<=57) { return allowedNum; }
+
+/* เช็คคีย์อังกฤษ a-z, A-Z */
+if ((k>=65 && k<=90) || (k>=97 && k<=122)) { return allowedEng; }
+
+/* เช็คคีย์ไทย ทั้งแบบ non-unicode และ unicode */
+if ((k>=161 && k<=255) || (k>=3585 && k<=3675)) { return allowedThai; }
+}
+//-->
+</script>
+                                            <input type = "text" class="form-control" name="Donate_name" required></td>
+      
+    </tr>
+    <tr>
+        <td colspan="2"><h4><label>คุณสมบัติผู้รับทุน</label></h4></td>
+    </tr>
+    <br>
+    <td> 
+        <label>&nbsp;&nbsp;&nbsp;GPAX <font color="red" size="5">*</font></abel>        
+        <div class="col-lg-6"><input type = "text" class="form-control" name="GPAX" required></div>
+        <script language="JavaScript" type="text/JavaScript">
+function bannedKey1(evt) 
+{
+var allowedEng = false; //อนุญาตให้คีย์อังกฤษ
+var allowedThai = false; //อนุญาตให้คีย์ไทย
+var allowedNum = true; //อนุญาตให้คีย์ตัวเลข
+
+var k = event.keyCode;
+
+/* เช็คตัวเลข 0-9 */
+if (k>=48 && k<=57) { return allowedNum; }
+
+/* เช็คคีย์อังกฤษ a-z, A-Z */
+if ((k>=65 && k<=90) || (k>=97 && k<=122)) { return allowedEng; }
+
+/* เช็คคีย์ไทย ทั้งแบบ non-unicode และ unicode */
+if ((k>=161 && k<=255) || (k>=3585 && k<=3675)) { return allowedThai; }
+}
+//-->
+</script></td>
+    <td><label>&nbsp;&nbsp;&nbsp;คะแนนความประพฤติ <font color="red" size="5">*</font></label>
+        <br>
+        <div class="col-lg-6"><input type = "text" class="form-control" name="Conduct" required></div></td>
+    </tr>
+    <tr>
+        <td><label>&nbsp;&nbsp;&nbsp;คะแนนกิจกรรม <font color="red" size="5">*</font></label>
+                        <script language="JavaScript" type="text/JavaScript">
+function bannedKey1(evt) 
+{
+var allowedEng = false; //อนุญาตให้คีย์อังกฤษ
+var allowedThai = false; //อนุญาตให้คีย์ไทย
+var allowedNum = true; //อนุญาตให้คีย์ตัวเลข
+
+var k = event.keyCode;
+
+/* เช็คตัวเลข 0-9 */
+if (k>=48 && k<=57) { return allowedNum; }
+
+/* เช็คคีย์อังกฤษ a-z, A-Z */
+if ((k>=65 && k<=90) || (k>=97 && k<=122)) { return allowedEng; }
+
+/* เช็คคีย์ไทย ทั้งแบบ non-unicode และ unicode */
+if ((k>=161 && k<=255) || (k>=3585 && k<=3675)) { return allowedThai; }
+}
+//-->
+</script><br>
+            <div class="col-lg-6"><input type = "text" class="form-control" name="activities" required></div></td>
+        <td><label>&nbsp;&nbsp;&nbsp;สำนักวิชา<font color="red" size="5">*</font></label>
+            <br>
+                         <div class="col-lg-6"><select class="form-control" name="School">
+                                                <option value="กรุณาเลือกสำนักวิชา">กรุณาเลือกสำนักวิชา</option>
+                                                <option value="การจัดการ">การจัดการ</option>
+                                                <option value="เทคโนโลยีการเกษตร">เทคโนโลยีการเกษตร</option>
+                                                <option value="พยาบาลศาสตร์">พยาบาลศาสตร์</option>
+                                                <option value="แพทยศาสตร์">แพทยศาสตร์</option>
+                                                <option value="เภสัชศาสตร์">เภสัชศาสตร์</option>
+                                                <option value="วิทยาศาสตร์">วิทยาศาสตร์</option>
+                                                <option value="วิศวกรรมศาสตร์และทรัพยากร">วิศวกรรมศาสตร์และทรัพยากร</option>
+                                                <option value="สถาปัตยกรรมศาสตร์และการออกแบบ">สถาปัตยกรรมศาสตร์และการออกแบบ</option>
+                                                <option value="สหเวชศาสตร์">สหเวชศาสตร์</option>
+                                                <option value="สารสนเทศศาสตร์">สารสนเทศศาสตร์</option>
+                                                <option value="ศิลปศาสตร์">ศิลปศาสตร์</option>
+                                                <option value="สาธารณสุขศาสตร์">สาธารณสุขศาสตร์</option>
+                                                <option value="รัฐศาสตร์และนิติศาสตร์">รัฐศาสตร์และนิติศาสตร์</option>
+                                            </select></div></td>
+    </tr>
+    <tr>
+        <td><label>&nbsp;&nbsp;&nbsp;จำนวนทุน<font color="red" size="5">*</font></label>
+                                <script language="JavaScript" type="text/JavaScript">
+function bannedKey1(evt) 
+{
+var allowedEng = false; //อนุญาตให้คีย์อังกฤษ
+var allowedThai = false; //อนุญาตให้คีย์ไทย
+var allowedNum = true; //อนุญาตให้คีย์ตัวเลข
+
+var k = event.keyCode;
+
+/* เช็คตัวเลข 0-9 */
+if (k>=48 && k<=57) { return allowedNum; }
+
+/* เช็คคีย์อังกฤษ a-z, A-Z */
+if ((k>=65 && k<=90) || (k>=97 && k<=122)) { return allowedEng; }
+
+/* เช็คคีย์ไทย ทั้งแบบ non-unicode และ unicode */
+if ((k>=161 && k<=255) || (k>=3585 && k<=3675)) { return allowedThai; }
+}
+//-->
+</script><br>
+             <div class="col-lg-6">
+            <input type = "number" class="form-control" name="Capital_amount" size="5" required></div></td>
+        <td><label>&nbsp;&nbsp;&nbsp;จำนวนเงินทุน<font color="red" size="5">*</font></label>
+            <br>
+            <div class="col-lg-6"><input type = "text" class="form-control" name="Amount" size="5" required></div></td>
+                                                                            
+    </tr>
+    <tr>
+        <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr align="center">
+        <td colspan="2"><input type="submit" class="btn btn-success" value="บันทึก" name="save">
+                        <button type="button" class="btn btn-danger">ยกเลิก</button></td>
+    </tr>
+
+</table>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
           <!-- Icon Cards-->
           <div class="row">
             <div class="col-xl-3 col-sm-6 mb-3">
